@@ -171,7 +171,7 @@ public class ImageChooserActivity extends BasicActivity implements
 	}
 
 	@Override
-	protected void onSaveInstanceState(Bundle outState) {
+	protected void onSaveInstanceState(@NonNull Bundle outState) {
 		outState.putInt("chooser_type", chooserType);
 		outState.putString("media_path", filePath);
 		super.onSaveInstanceState(outState);
